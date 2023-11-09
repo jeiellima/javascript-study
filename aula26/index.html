@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Tabela IMC</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 </head>
@@ -12,33 +12,39 @@
 <body>
     <section class="container">
         <h1>Tabela IMC</h1>
-        <h2>IMC</h2>
-        <p>
-            Menor do que 18.5 <br>
-            Entre 18.5 e 24.9 <br>
-            Entre 25 e 29.9 <br>
-            Enre 30 e 39.9 <br>
-            Entre 35 e 39.9 <br>
-            Maior do que 40 <br>
-        </p>
-        <h2>Resultado</h2>
-        <p>
-            Abaixo do peso <br>
-            Peso normal <br>
-            Sobrepeso <br>
-            Obesidade grau 1 <br>
-            Obesidade grau 2 <br>
-            Obesidade grau 3 <br>
-        </p>
-        <form action="">
-            <label for="input-4">Peso</label>
-            <input type="number" name="input4" id="input-4">
+        <div id="conteudo-esq">
+            <h2>IMC</h2>
+            <p>
+                Menor do que 18.5 <br>
+                Entre 18.5 e 24.9 <br>
+                Entre 25 e 29.9 <br>
+                Enre 30 e 39.9 <br>
+                Entre 35 e 39.9 <br>
+                Maior do que 40 <br>
+            </p>
+        </div>
+        <div id="conteudo-dir">
+            <h2>Resultado</h2>
+            <p>
+                Abaixo do peso <br>
+                Peso normal <br>
+                Sobrepeso <br>
+                Obesidade grau 1 <br>
+                Obesidade grau 2 <br>
+                Obesidade grau 3 <br>
+            </p>
+        </div>
+        <h3>Calcule seu IMC</h3>
+        <form action="/" id="formulario" method="POST">
+            <label for="peso">Peso:</label>
+            <input type="text" name="peso" id="peso" placeholder="Ex: 99.9">
 
-            <label for="input-4">Altura</label>
-            <input type="number" name="input4" id="input-4">
+            <label for="altura">Altura:</label>
+            <input type="text" name="altura" id="altura" placeholder="Ex.: 1.99">
 
-            <input type="submit" value="Enviar" id="submit">
+            <input type="submit" value="Enviar" id="submit" >
         </form>
+        <div id="resultado"></div>
     </section>
     <script src="./assets/js/main.js"></script>
 </body>
